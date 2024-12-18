@@ -113,79 +113,79 @@ function input_state_check(index, kb_function, gp_function) {
     if (is_array(input_array) && index < array_length(input_array)) {
         for (var i = 0; i < array_length(input_array[index]); ++i) {
 		    var input_value = input_array[index][i];
-	        if (input_value == Control.KBA && kb_function(ord("A"))) { return true; }
-	        if (input_value == Control.KBB && kb_function(ord("B"))) { return true; }
-	        if (input_value == Control.KBC && kb_function(ord("C"))) { return true; }
-	        if (input_value == Control.KBD && kb_function(ord("D"))) { return true; }
-	        if (input_value == Control.KBE && kb_function(ord("E"))) { return true; }
-	        if (input_value == Control.KBF && kb_function(ord("F"))) { return true; }
-	        if (input_value == Control.KBG && kb_function(ord("G"))) { return true; }
-	        if (input_value == Control.KBH && kb_function(ord("H"))) { return true; }
-	        if (input_value == Control.KBI && kb_function(ord("I"))) { return true; }
-	        if (input_value == Control.KBJ && kb_function(ord("J"))) { return true; }
-	        if (input_value == Control.KBK && kb_function(ord("K"))) { return true; }
-	        if (input_value == Control.KBL && kb_function(ord("L"))) { return true; }
-	        if (input_value == Control.KBM && kb_function(ord("M"))) { return true; }
-	        if (input_value == Control.KBN && kb_function(ord("N"))) { return true; }
-	        if (input_value == Control.KBO && kb_function(ord("O"))) { return true; }
-	        if (input_value == Control.KBP && kb_function(ord("P"))) { return true; }
-	        if (input_value == Control.KBQ && kb_function(ord("Q"))) { return true; }
-	        if (input_value == Control.KBR && kb_function(ord("R"))) { return true; }
-	        if (input_value == Control.KBS && kb_function(ord("S"))) { return true; }
-	        if (input_value == Control.KBT && kb_function(ord("T"))) { return true; }
-	        if (input_value == Control.KBU && kb_function(ord("U"))) { return true; }
-	        if (input_value == Control.KBV && kb_function(ord("V"))) { return true; }
-	        if (input_value == Control.KBW && kb_function(ord("W"))) { return true; }
-	        if (input_value == Control.KBX && kb_function(ord("X"))) { return true; }
-	        if (input_value == Control.KBY && kb_function(ord("Y"))) { return true; }
-	        if (input_value == Control.KBZ && kb_function(ord("Z"))) { return true; }
-	        if (input_value == Control.KB0 && kb_function(ord("0"))) { return true; }
-	        if (input_value == Control.KB1 && kb_function(ord("1"))) { return true; }
-	        if (input_value == Control.KB2 && kb_function(ord("2"))) { return true; }
-	        if (input_value == Control.KB3 && kb_function(ord("3"))) { return true; }
-	        if (input_value == Control.KB4 && kb_function(ord("4"))) { return true; }
-	        if (input_value == Control.KB5 && kb_function(ord("5"))) { return true; }
-	        if (input_value == Control.KB6 && kb_function(ord("6"))) { return true; }
-	        if (input_value == Control.KB7 && kb_function(ord("7"))) { return true; }
-	        if (input_value == Control.KB8 && kb_function(ord("8"))) { return true; }
-	        if (input_value == Control.KB9 && kb_function(ord("9"))) { return true; }
-	        if (input_value == Control.KBSpace && kb_function(vk_space)) { return true; }
-	        if (input_value == Control.KBEnter && kb_function(vk_enter)) { return true; }
-	        if (input_value == Control.KBEscape && kb_function(vk_escape)) { return true; }
-	        if (input_value == Control.KBUp && kb_function(vk_up)) { return true; }
-	        if (input_value == Control.KBDown && kb_function(vk_down)) { return true; }
-	        if (input_value == Control.KBLeft && kb_function(vk_left)) { return true; }
-	        if (input_value == Control.KBRight && kb_function(vk_right)) { return true; }
-	        if (input_value == Control.KBShift && kb_function(vk_shift)) { return true; }
-	        if (input_value == Control.KBControl && kb_function(vk_control)) { return true; }
-	        if (input_value == Control.KBAlt && kb_function(vk_alt)) { return true; }
-	        if (input_value == Control.KBBackspace && kb_function(vk_backspace)) { return true; }
-	        if (input_value == Control.KBTab && kb_function(vk_tab)) { return true; }
-	        if (input_value == Control.KBF1 && kb_function(vk_f1)) { return true; }
-	        if (input_value == Control.KBF2 && kb_function(vk_f2)) { return true; }
-	        if (input_value == Control.KBF3 && kb_function(vk_f3)) { return true; }
-	        if (input_value == Control.KBF4 && kb_function(vk_f4)) { return true; }
-	        if (input_value == Control.KBF5 && kb_function(vk_f5)) { return true; }
-	        if (input_value == Control.KBF6 && kb_function(vk_f6)) { return true; }
-	        if (input_value == Control.KBF7 && kb_function(vk_f7)) { return true; }
-	        if (input_value == Control.KBF8 && kb_function(vk_f8)) { return true; }
-	        if (input_value == Control.KBF9 && kb_function(vk_f9)) { return true; }
-	        if (input_value == Control.KBF10 && kb_function(vk_f10)) { return true; }
-	        if (input_value == Control.KBF11 && kb_function(vk_f11)) { return true; }
-	        if (input_value == Control.KBF12 && kb_function(vk_f12)) { return true; }
-	        if (input_value == Control.CTRLA && gp_function(0, gp_face1)) { return true; }
-	        if (input_value == Control.CTRLB && gp_function(0, gp_face2)) { return true; }
-	        if (input_value == Control.CTRLX && gp_function(0, gp_face3)) { return true; }
-	        if (input_value == Control.CTRLY && gp_function(0, gp_face4)) { return true; }
-	        if (input_value == Control.CTRLUP && gp_function(0, gp_padu)) { return true; }
-	        if (input_value == Control.CTRLDOWN && gp_function(0, gp_padd)) { return true; }
-	        if (input_value == Control.CTRLLEFT && gp_function(0, gp_padl)) { return true; }
-	        if (input_value == Control.CTRLRIGHT && gp_function(0, gp_padr)) { return true; }
-	        if (input_value == Control.CTRLSTART && gp_function(0, gp_start)) { return true; }
-	        if (input_value == Control.CTRLSELECT && gp_function(0, gp_select)) { return true; }
-	        if (input_value == Control.CTRLTRIGL && gp_function(0, gp_shoulderl)) { return true; }
-	        if (input_value == Control.CTRLTRIGR && gp_function(0, gp_shoulderr)) { return true; }
-	    }
+		        if( Control.KBA && kb_function(ord("A"))) { return true; }
+		        if( Control.KBB && kb_function(ord("B"))) { return true; }
+		        if( Control.KBC && kb_function(ord("C"))) { return true; }
+		        if( Control.KBD && kb_function(ord("D"))) { return true; }
+		        if( Control.KBE && kb_function(ord("E"))) { return true; }
+		        if( Control.KBF && kb_function(ord("F"))) { return true; }
+		        if( Control.KBG && kb_function(ord("G"))) { return true; }
+		        if( Control.KBH && kb_function(ord("H"))) { return true; }
+		        if( Control.KBI && kb_function(ord("I"))) { return true; }
+		        if( Control.KBJ && kb_function(ord("J"))) { return true; }
+		        if( Control.KBK && kb_function(ord("K"))) { return true; }
+		        if( Control.KBL && kb_function(ord("L"))) { return true; }
+		        if( Control.KBM && kb_function(ord("M"))) { return true; }
+		        if( Control.KBN && kb_function(ord("N"))) { return true; }
+		        if( Control.KBO && kb_function(ord("O"))) { return true; }
+		        if( Control.KBP && kb_function(ord("P"))) { return true; }
+		        if( Control.KBQ && kb_function(ord("Q"))) { return true; }
+		        if( Control.KBR && kb_function(ord("R"))) { return true; }
+		        if( Control.KBS && kb_function(ord("S"))) { return true; }
+		        if( Control.KBT && kb_function(ord("T"))) { return true; }
+		        if( Control.KBU && kb_function(ord("U"))) { return true; }
+		        if( Control.KBV && kb_function(ord("V"))) { return true; }
+		        if( Control.KBW && kb_function(ord("W"))) { return true; }
+		        if( Control.KBX && kb_function(ord("X"))) { return true; }
+		        if( Control.KBY && kb_function(ord("Y"))) { return true; }
+		        if( Control.KBZ && kb_function(ord("Z"))) { return true; }
+		        if( Control.KB0 && kb_function(ord("0"))) { return true; }
+		        if( Control.KB1 && kb_function(ord("1"))) { return true; }
+		        if( Control.KB2 && kb_function(ord("2"))) { return true; }
+		        if( Control.KB3 && kb_function(ord("3"))) { return true; }
+		        if( Control.KB4 && kb_function(ord("4"))) { return true; }
+		        if( Control.KB5 && kb_function(ord("5"))) { return true; }
+		        if( Control.KB6 && kb_function(ord("6"))) { return true; }
+		        if( Control.KB7 && kb_function(ord("7"))) { return true; }
+		        if( Control.KB8 && kb_function(ord("8"))) { return true; }
+		        if( Control.KB9 && kb_function(ord("9"))) { return true; }
+		        if( Control.KBSpace && kb_function(vk_space)) { return true; }
+		        if( Control.KBEnter && kb_function(vk_enter)) { return true; }
+		        if( Control.KBEscape && kb_function(vk_escape)) { return true; }
+		        if( Control.KBUp && kb_function(vk_up)) { return true; }
+		        if( Control.KBDown && kb_function(vk_down)) { return true; }
+		        if( Control.KBLeft && kb_function(vk_left)) { return true; }
+		        if( Control.KBRight && kb_function(vk_right)) { return true; }
+		        if( Control.KBShift && kb_function(vk_shift)) { return true; }
+		        if( Control.KBControl && kb_function(vk_control)) { return true; }
+		        if( Control.KBAlt && kb_function(vk_alt)) { return true; }
+		        if( Control.KBBackspace && kb_function(vk_backspace)) { return true; }
+		        if( Control.KBTab && kb_function(vk_tab)) { return true; }
+		        if( Control.KBF1 && kb_function(vk_f1)) { return true; }
+		        if( Control.KBF2 && kb_function(vk_f2)) { return true; }
+		        if( Control.KBF3 && kb_function(vk_f3)) { return true; }
+		        if( Control.KBF4 && kb_function(vk_f4)) { return true; }
+		        if( Control.KBF5 && kb_function(vk_f5)) { return true; }
+		        if( Control.KBF6 && kb_function(vk_f6)) { return true; }
+		        if( Control.KBF7 && kb_function(vk_f7)) { return true; }
+		        if( Control.KBF8 && kb_function(vk_f8)) { return true; }
+		        if( Control.KBF9 && kb_function(vk_f9)) { return true; }
+		        if( Control.KBF10 && kb_function(vk_f10)) { return true; }
+		        if( Control.KBF11 && kb_function(vk_f11)) { return true; }
+		        if( Control.KBF12 && kb_function(vk_f12)) { return true; }
+		        if( Control.CTRLA && gp_function(0, gp_face1)) { return true; }
+		        if( Control.CTRLB && gp_function(0, gp_face2)) { return true; }
+		        if( Control.CTRLX && gp_function(0, gp_face3)) { return true; }
+		        if( Control.CTRLY && gp_function(0, gp_face4)) { return true; }
+		        if( Control.CTRLUP && gp_function(0, gp_padu)) { return true; }
+		        if( Control.CTRLDOWN && gp_function(0, gp_padd)) { return true; }
+		        if( Control.CTRLLEFT && gp_function(0, gp_padl)) { return true; }
+		        if( Control.CTRLRIGHT && gp_function(0, gp_padr)) { return true; }
+		        if( Control.CTRLSTART && gp_function(0, gp_start)) { return true; }
+		        if( Control.CTRLSELECT && gp_function(0, gp_select)) { return true; }
+		        if( Control.CTRLTRIGL && gp_function(0, gp_shoulderl)) { return true; }
+		        if( Control.CTRLTRIGR && gp_function(0, gp_shoulderr)) { return true; }
+		}
 		return false
     } else {
         show_debug_message("Error: Invalid input index or input array not set correctly.");

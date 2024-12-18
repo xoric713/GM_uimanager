@@ -37,6 +37,7 @@
   "name":"UI_manager",
   "resources":[
     {"id":{"name":"Ogm","path":"objects/Ogm/Ogm.yy",},},
+    {"id":{"name":"Ouidemo","path":"objects/Ouidemo/Ouidemo.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Filemanage","path":"scripts/Filemanage/Filemanage.yy",},},
