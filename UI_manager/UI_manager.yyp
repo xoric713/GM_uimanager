@@ -41,7 +41,6 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Filemanage","path":"scripts/Filemanage/Filemanage.yy",},},
-    {"id":{"name":"Input_manager","path":"scripts/Input_manager/Input_manager.yy",},},
     {"id":{"name":"UI_Manager","path":"scripts/UI_Manager/UI_Manager.yy",},},
     {"id":{"name":"Sbutt_1","path":"sprites/Sbutt_1/Sbutt_1.yy",},},
     {"id":{"name":"Sbutt_10","path":"sprites/Sbutt_10/Sbutt_10.yy",},},

@@ -39,11 +39,11 @@ function ui_layer(Lname = "Buttons",_depth=-500) constructor{
 	
 }
 
-function Make_Button(Sprite,xx,yy,ww,hh,txt,txtsze,color = c_white,tcolor = c_black,alpha = 1) constructor {
+function Make_Button(Sprite,xx,yy,ww,hh,txt ="",txtsze = 1,color = c_white,tcolor = c_black,alpha = 1) constructor {
 	sprite = Sprite
 	sprite_index = 0
-	x = global.coords[xx][yy][0]
-	y = global.coords[xx][yy][1]
+	x = xx
+	y = yy
 	w = ww
 	h = hh
 	text = txt
@@ -62,18 +62,24 @@ enum axis {
 	X,
 	Y
 }
-function Make_Button_list(dirctn,count,Sprite,xx,yy,ww,hh,txt,txtsze,color = c_white,tcolor = c_black,alpha = 1) constructor{
+function Make_Button_list(dirctn,Sprite,xx,yy,ww,hh,txt = [""],txtsze=1,color = c_white,tcolor = c_black,alpha = 1) constructor{
 	elements = []
+	current = 0
 	switch(dirctn){
 		case axis.X:
-		for (var i = 0; i < count; ++i) {
-			elements[i] = new Make_Button(Sprite,xx+(i+w),yy,ww,hh,txt,txtsze,color,tcolor,talign,alpha)  
+		for (var i = 0; i < array_length(txt); ++i) {
+			elements[i] = new Make_Button(Sprite,xx+(i*ww),yy,ww,hh,txt[i],txtsze,color,tcolor,alpha)  
 		}
 		break
 		case axis.Y:
-		for (var i = 0; i < count; ++i) {
-			elements[i] = new Make_Button(Sprite,xx,yy+(i+h),ww,hh,txt,txtsze,color,tcolor,talign,alpha)  
+		for (var i = 0; i <  array_length(txt); ++i) {
+			elements[i] = new Make_Button(Sprite,xx,yy+(i*hh),ww,hh,txt[i],txtsze,color,tcolor,alpha)  
 		}
 		break
+	}
+	draw = function(){
+		for(var i = 0; i < array_length(elements);++i){
+			elements[i].draw()
+		}
 	}
 }
