@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UI_Manager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UI_Manager",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
